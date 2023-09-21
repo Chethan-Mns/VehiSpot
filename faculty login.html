@@ -1,0 +1,261 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Login Form</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,400&family=Roboto&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat|Ubuntu" rel="stylesheet">
+
+  <!-- CSS Stylesheets -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/fontawesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://kit.fontawesome.com/c00a9f013e.js" crossorigin="anonymous"></script>
+
+
+  <!-- Bootstrap Scripts -->
+  <!-- CSS only -->
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<style>
+@media screen and (min-width: 480px) {
+  #form {
+    width:400px;
+  }
+}
+    @-webkit-keyframes animatebottom {
+  0% {
+opacity:0;
+    margin-top:500px;
+}
+
+
+
+100% {
+opacity:1;
+    margin-top:0px;
+}
+}
+
+@keyframes animatebottom { 
+  0% {
+opacity:0;
+    margin-top:500px;
+}
+
+
+
+100% {
+opacity:1;
+    margin-top:0px;
+}
+}
+        input{
+        color: #888;margin:5px;
+            border-radius: 0px;
+    border: 0px solid #eee;
+    padding: 8px;
+    background: #eee;
+    transition-duration:.5s;
+        }
+        Input:Focus{
+            border-radius:50px;
+            background-color: #ccc;
+            color:#fff;
+        }
+        a{
+    text-decoration:none!important;
+    color:#fff;
+}
+.button{
+padding-top:15px;
+margin-top:15px;
+}
+        hr {
+    border: 2px solid #c1c1c1;
+}
+        button{
+            cursor: hand;
+            border: none;
+    background: #0D6EFD;
+    color: white;
+    padding: 11px 26px;
+    border-radius: 5px;
+    font-size: 16px;
+    transition-duration:.1s;
+        }
+        Button:active{
+            background-color: #555;
+            
+        }
+        *{
+            outline: none;
+            user-select: none;
+        }
+        H1{
+            width:100%;
+            color: #888;
+        }
+        #form{
+        outline:15px solid #0D6EFD;
+        margin: 20px;
+        width: 100%;
+        border-radius: 10px;
+    text-align: -webkit-center;
+    background: rgba(255,255,255,1);
+    padding: 30px 10px;
+     border-top: 30px solid #0D6EFD;
+    border-bottom: 30px solid #0D6EFD;
+    box-shadow: -1px 1px 20px rgba(0, 0, 0,0.5);
+    Border:none;
+    outline:none;
+    animation:  animatebottom 1s cubic-bezier(1, -0.06, 0.26, 1.06);
+        }
+        body{
+         -webkit-user-select:none;
+   -moz-user-select: none;
+   -ms-user-select: none; 
+    user-select: none;
+    
+ 
+  
+    background-attachment: fixed;
+    background-position: bottom left ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition:1s;
+            padding: 10px;
+            margin:0;
+            color: #888;
+            font-family: Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace";
+            text-align: -webkit-center;
+            
+        }
+        
+        footer{
+            padding:15px 15px;
+            width: 80%;
+            position: fixed;
+            bottom: 2%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            background-color: #fff;
+            text-align:-webkit-center;
+            color:#fff!important;
+            border-radius: 50px;
+            color: #fff;
+            background-color: rgba(255,255,255,0.25);
+            
+        }
+header h1{
+width:90%;
+Border: 5px dotted #27a5df;
+    color: #27a5df;
+    text-align:-webkit-center;
+    border-radius:5px;
+}
+a{
+        text-decoration: none;
+        color: #fff;
+    }
+a:hover{
+    color: #fff;
+}
+</style>
+
+<link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.5.0/css/all.css' integrity='sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU' crossorigin='anonymous'>
+</head>
+
+<body>
+    <section class="colored-section" id="title">
+    
+        <div class="container-fluid">
+    
+          <!-- Nav Bar -->
+    
+          <nav class="navbar navbar-expand-lg navbar-light">
+            
+    
+            <a class="navbar-brand" href="">
+              <img class="logo" src="images/logo.png" alt="index.html">
+              <h1 class="nbkr">N.B.K.R.I.S.T</h1>
+    
+            </a>
+    
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+    
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+    
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                  </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="location.html">Location</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Sign In
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <li><a class="dropdown-item" href="student login.html">Student</a></li>
+                    <li><a class="dropdown-item" href="faculty login.html">Faculty</a></li>
+                  </ul>
+                </li>
+              </ul>
+    
+            </div>
+          </nav>
+    
+    <main id="form">
+    <section style="display: inline;" id="ma">
+    <i class='far fa-user-circle' style='font-size:84px;padding: 5px; color: #0D6EFD'></i>
+        <h1>Faculty Login </h1><hr><br>
+        
+        Username
+        <input id="un" placeholder="Enter username..." type="text" /><br><br>
+        
+        Password
+        <input type="password" id="psw" placeholder="Enter password..." /><br><br>
+        
+       <i class="far fa-check-circle" style="font-size: 20px;color: #0D6EFD" onclick="uc()" id="1"></i>
+           
+       <i class="far fa-circle" style="font-size: 20px;display: none;color: #0D6EFD" onclick="ch()" id="2"></i> Remember Me<br><br>
+        
+        <button onclick="login()">Login
+        <i class="fas fa-sign-in-alt"></i>
+        </button>
+       <button><a href="register.html">Register</a>
+        <i class="fas fa-sign-in-alt"></i>
+</button>
+        <button class="button" onclick="forgot()">Forgot Password
+        <i class="fas fa-sign-in-alt"></i>
+        </button>
+    </section>
+   
+    </main>
+    
+    <br><br>
+    
+
+        <br /><br /><br />
+</body>
+</html>
