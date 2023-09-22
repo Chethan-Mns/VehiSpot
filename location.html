@@ -217,43 +217,15 @@ Border: 5px dotted #0D6EFD;
     
     <main id="form">
     <section style="display: inline;" id="ma">
-    <i class='far fa-user-circle' style='font-size:84px;padding: 5px; color:#0D6EFD'></i>
-        <h1>Fee Payment </h1><hr><br>
+      <i class="fa-solid fa-location-dot"  style='font-size:84px;padding: 5px; color:#0D6EFD'></i>
+        <h1>Location </h1><hr><br>
         
-        Roll No
-        <input id="un" placeholder="Enter Roll Number..." type="text" /><br><br>
+        Bus No:
+        <input style="width: 20%;" id="un" placeholder="Enter Bus number..." type="number" min="1" max="45"/><br><br>
 
-        Phone Number
-        <input id="un" placeholder="Enter Register Phone No..." type="text" /><br><br>
 
-        <form action="#">
-          <label for="hostel">Hostel</label>
-          <select name="branches" id="hostel">
-            <option value="I">Neptune</option>
-            <option value="mercury">Mercury</option>
-            <option value="jupiter">Jupiter</option>
-            <option value="venus">Venus</option>
-            <option value="narmada">Narmada</option>
-          </select>
-    </form><br><br>
 
-         <form action="#">
-      <label for="branch">Installment</label>
-      <select name="branches" id="branch">
-        <option value="I">I Installment</option>
-        <option value="II">II Installment</option>
-      </select>
-</form><br><br>
-
-          <form action="#">
-      <label for="branch">Payment Options</label>
-      <select name="payment" id="Pay">
-        <option value="Upi">BHIM/UPI</option>
-        <option value="Card">Credit/Debit Card</option>
-      </select>
-</form><br><br>
-
-       <button onclick="otp()">Submit
+       <button onclick="otp()">Track
         <i class="fas fa-sign-in-alt"></i><br>
         </button>
     </section>
