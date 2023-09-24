@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Live Tracking</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://use.fontawesome.com/c47bc38e87.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+<link rel="stylesheet" href="css/styles.css">
+<link rel="stylesheet" href="css/bar.css">
+
+</head>
+<body>
+  <section class="colored-section" id="title">
+    
+    <div class="container-fluid">
+
+      <!-- Nav Bar -->
+
+      <nav class="navbar navbar-expand-lg navbar-light">
+        
+
+        <a class="navbar-brand" href="index.html">
+          <img class="logo" src="images/logo.png" alt="">
+          <h1 class="nbkr">N.B.K.R.I.S.T</h1>
+
+        </a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="location.html">Location</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Sign In
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <li><a class="dropdown-item" href="student login.html">Student</a></li>
+                <li><a class="dropdown-item" href="faculty login.html">Faculty</a></li>
+              </ul>
+            </li>
+          </ul>
+
+        </div>
+      </nav><br><br><br>
+<form action="">
+<div
+  id="app"
+  :class="progressClasses"
+>
+  <div class="progress__bg"></div>
+  <template v-for="(step, index) in steps">
+    <div :class="stepClasses(index)">
+      <div class="progress__indicator">
+        <i class="fa fa-check"></i>
+      </div>
+      <div class="progress__label">
+        {{step.label}}
+      </div>
+    </div>
+  </template>
+  
+  <div class="progress__actions">
+    <div
+      class="btn"
+      v-on:click="nextStep(false)"
+    >
+      Back
+    </div>
+    <div
+      class="btn"
+      v-on:click="nextStep"
+    >
+      Next
+    </div>
+    <div style="align-items: center;text-align: center;">
+     <center> Step:
+      {{currentStep ? currentStep.label : "Start"}}
+     </center>
+    </div>
+  </div>
+</div>
+</form>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.11/vue.min.js'></script><script  src="css/script.js"></script>
+
+</body>
+</html>
